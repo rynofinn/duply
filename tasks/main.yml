@@ -130,7 +130,7 @@
     day: "{{ item.day | default(duply_default_day) }}"
     month: "{{ item.month | default(duply_default_month) }}"
     weekday: "{{ item.weekday | default(duply_default_weekday) }}"
-    job: cronic duply {{ item.name }} {{ item.command | default(duply_default_command) }}
+    job: duply {{ item.name }} {{ item.command | default(duply_default_command) }}
     state: "{{ item.state | default('present') }}"
   tags:
     - duply

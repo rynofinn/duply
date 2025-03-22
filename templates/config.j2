@@ -16,4 +16,4 @@ MAX_AGE="{{ item.max_age | default(duply_default_max_age) }}"
 MAX_FULL_BACKUPS="{{ item.max_full | default(duply_default_max_full) }}"
 VERBOSITY="{{ item.verbosity | default(duply_default_verbosity) }}"
 
-DUPL_PARAMS="$DUPL_PARAMS --volsize {{ item.volsize | default(duply_default_volsize) }}"
+DUPL_PARAMS="$DUPL_PARAMS --volsize {{ item.volsize | default(duply_default_volsize) }} {{ item.ssh_opts | default(duply_ssh_opts) }}"

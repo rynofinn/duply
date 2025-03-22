@@ -77,4 +77,8 @@ duply_default_volsize: '1024'
 # @end
 duply_default_variables: []
 
+# @var duply_ssh_opts:description: ssh options passed to duply command
+duply_ssh_opts: "--ssh-options='-i /root/.ssh/id_backup_rsa'"
+duply_rsync_opts: "--rsync-options='--mkpath'"
+
 ...
